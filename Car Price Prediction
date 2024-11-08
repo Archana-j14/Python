@@ -1,0 +1,84 @@
+print("Car brands:\n 1.BMW \n 2.BENZ \n 3.VOLKSWAGEN \n 4.AUDI \n 5.TOYOTA \n 6.MAHINDRA \n 7.KIA \n 8.HYUNDAI \n 9.FORD \n 10.NISSAN \n 11.Honda \n 12.Porsche \n")
+x=input("Enter the car brand: ")
+a=x.upper()
+b=int(input("year: "))
+c=int(input("mileage(kmpl): "))
+print("\n")
+print("1.new car \n2.second hand car\n")
+car={"new car":1,"second hand car":2}
+i=int(input("Enter your choice: "))
+if i==1:
+	if a=="BMW":
+		if b>=2015 and c<=50:
+			z="53.90lakh"
+			print("Rs",z)
+		elif b<2015 and c<30:
+			print("Rs 46.60lakh")
+		elif b<2010 and c<10:
+			print("Rs 40.36lakh")
+		else:
+			print("Rs 35.45lakh")
+	elif a=="BENZ":
+		if b>=2015 and c<=50:
+			z="50.80lakh"
+			print("Rs",z)
+		elif b<2015 and c<30:
+			print("Rs 46.25lakh")
+		elif b<2010 and c<10:
+			print("Rs 42.57lakh")
+		else:
+			print("Rs 32.25lakh")
+	elif a=="VOLKSWAGEN or FORD":
+		if b>=2015 and c<=50:
+			z="19.56lakh"
+			print("Rs",z)
+		elif b<2015 and c>30:
+			print("Rs 15.36lakh")
+		else:
+			print("Rs 11.56lakh")
+	elif a=="AUDI" or "KIA":
+		if b>=2015 and c<=50:
+			z="43.81lakh"
+			print("Rs",z)
+		elif b<2015 and c<30:
+			print("Rs 34.86lakh")
+		else:
+			print("Rs 26.43lakh")
+	elif a=="MAHINDRA" or "NISSAN":
+		z="26.25lakh"
+		print("Rs",z)
+	elif a=="HYUNDAI":
+		print("Rs 16.67lakh")
+	elif a=="HONDA" or "PORSCHE": 
+		print("Rs 23.56lakhs")
+	else:
+		print("Rs 15.50lakh")
+elif i==2:
+if a=="BMW":
+		if b>=2015 and c<=50:
+			print("Rs 43.70 lakhs")
+		elif b<2015 and c<30:
+			print("Rs 35.32 lakhs")
+		else:
+			print("Rs 31.45 lakhs")
+	elif a=="BENZ":
+		if b>=2015 and c<=50:
+			print("Rs 45.67 lakhs")
+		elif b<2015 and c<30:
+			print("Rs 42.56 lakhs")
+		else:
+			print("Rs 25.65 lakhs")
+	elif a=="VOLKSWAGEN" or "FORD":
+		print("Rs 15.35 lakhs")
+	elif a=="AUDI" or "KIA":
+		print("Rs 30.54 lakhs")
+	elif a=="MAHINDRA" or "NISSAN":
+		print("Rs 20.32 lakhs")
+	elif a=="HYUNDAI":
+		print("Rs 9.25 lakhs")
+	elif a=="HONDA" or "PORSCHE":
+		print("Rs 14.78 lakhs")
+	else:
+		print("Rs 10.12 lakhs")
+else:
+	print("Invalid")
